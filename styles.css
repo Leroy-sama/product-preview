@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: white;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+picture > img,
+.preview {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px 15px 0 0;
+}
+
+.preview {
+    padding: 20px;
+    
+}
+
+.header {
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    letter-spacing: 5px;
+    font-size: 12px;
+    color: hsl(228, 12%, 48%);
+}
+
+.title {
+    font-family: 'Fraunces', serif;
+}
+
+.description {
+    padding: 20px 0;
+    color: hsl(228, 12%, 48%);
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.prices p {
+    font-size: 30px;
+    color: hsl(158, 39%, 31%);
+    font-family: 'Fraunces', serif;
+}
+
+.prices span {
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+.cart-btn {
+    color: white;
+    background-color: hsl(158, 39%, 31%);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.cart-btn:hover {
+    background-color: hsl(158, 47%, 16%);
+}
+
+@media (min-width: 768px) {
+    .card {
+        display: flex;
+        border-radius: 15px;
+    }
+
+    picture > img,
+    .preview {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 15px 0 0 15px;
+    }
+
+    .cart-btn {
+        margin-top: 25px;
+    }
+}
